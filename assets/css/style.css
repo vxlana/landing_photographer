@@ -1,0 +1,467 @@
+
+
+/* Lato Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Overpass Regular */
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color: #EDEBDE;
+    margin: 0;
+    background-color: #1B1716;
+}
+
+/* Welcome section */
+.welcome {
+    background-image: url('/assets/img/backgraund_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 168px; 
+}
+
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 0;                 /* убираем внутренние отступы секций */
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 0;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_item a {
+    text-decoration: none;  
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #EDEBDE;
+    transition: color 0.2s ease;
+}
+
+.nav_item a:hover {
+    color: rgba(250, 242, 231, 0.6);
+}
+
+.title {
+    width: 884px;
+    margin: 200px 0 0 0; 
+}
+
+.title_main h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    margin: 0;          
+}
+
+.title_highlight {
+    color: rgba(124, 34, 43, 0.8);
+}
+
+.title_sec h3 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 42px;      
+    margin-bottom: 0;
+    color: rgba(237, 235, 222, 0.8);
+}
+
+.buttons {
+    display: flex;         
+    flex-direction: row;   
+    gap: 84px;             
+    margin-top: 84px;      
+}
+
+.btn_main {
+    background-color: rgba(124, 34, 43, 0.8);
+    color: rgba(237, 235, 222, 0.8);      
+    padding: 16px 22px;                    
+    border: none;                          
+    border-radius: 0;                        
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;                         
+    font-weight: 300;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease; 
+}
+
+.btn_main:hover {
+    background-color: rgba(124, 34, 43, 1); 
+    color: rgba(237, 235, 222, 1);        
+}
+
+.btn_portfolio {
+    color: rgba(237, 235, 222, 0.8);
+    padding: 16px 22px;
+    border: 1px solid rgba(237, 235, 222, 0.8);
+    border-radius: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: border 0.2s ease, color 0.2s ease; 
+
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_portfolio:hover {
+    border: 1px solid rgba(237, 235, 222, 1); 
+    color: rgba(237, 235, 222, 1);        
+}
+
+.social_icons {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;   
+    margin-top: 168px;    
+}
+
+.social_icon {
+  width: 24px;
+  height: 24px;
+  color: #EDEBDE; 
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.social_icon:hover {
+    color: rgba(250, 242, 231, 0.6);
+}
+
+/* about me section */
+
+.about_me {
+    margin-top: 168px;
+}
+
+.section_title {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+}
+
+.about_me .content {
+    margin-top: 84px;
+}
+
+.block_1 {
+    display: flex;
+    gap: 20px;
+}
+
+.block_1 .about_me_img {
+    display: flex;
+    gap: 20px;
+}
+
+.block_2 {
+    display: flex;
+    gap: 20px;
+    margin-top: 84px;
+}
+
+.about_me_text {
+    width: 570px;
+}
+
+.about_me_text p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 24px;     
+    line-height: 34px; 
+    color: rgba(237, 235, 222, 0.8);
+    margin: 0;
+}
+
+
+/* portfolio section */
+.portfolio {
+    margin-top: 168px;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+/*     padding-bottom: 168px;*/
+}
+
+.portfolio .imgs {
+    display: flex;
+    gap: 20px; 
+    margin-top: 84px;
+}
+
+.block_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.row1 {
+    display: flex;
+    gap: 20px;
+}
+
+.row2 img {
+    display: block;
+}
+
+.block-right img {
+    display: block;
+}
+
+.portfolio .buttons {
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* prices section */
+.prices {
+    margin-top: 168px;
+}
+
+.price_text {
+    margin-top: 48px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 24px;     
+    color: rgba(237, 235, 222, 0.8);
+}
+
+.prices_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 373px);
+    gap: 20px;
+    margin-top: 84px;
+}
+
+.price_card {
+    position: relative;
+    width: 373px;
+    height: 498px;
+    overflow: hidden;
+}
+
+.price_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.price_card:hover img {
+    transform: scale(1.1);
+}
+
+.price_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 373px;
+    height: 78px;
+
+    padding: 24px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+}
+
+.price_title {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #1B1716;
+}
+
+.price_value {
+    font-size: 24px;
+    color: #641C23;
+    flex-shrink: 0;
+}
+
+.buttons_prices {
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* faq section */
+.faq {
+    width: 1160px;
+    margin: 0 auto;
+    font-family: 'Overpass', sans-serif;
+}
+
+.faq_toggle {
+    display: none;
+}
+
+.faq_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.faq_question {
+    display: grid;
+    grid-template-columns: 30px 1100px 30px;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+.faq_number {
+    width: 30px;
+    height: 30px;
+    color: #FAF2E7;
+    font-size: 24px;
+    text-align: left;
+}
+
+.faq_text {
+    width: 1100px;
+    height: 30px;
+    color: #FAF2E7;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.faq_icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq_icon img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.4s ease;
+}
+
+.faq_answer {
+    width: 1100px;
+    margin-left: 30px;
+    margin-top: 16px; 
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(250, 242, 231, 0.6);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.faq_toggle:checked + .faq_question + .faq_answer {
+    max-height: 200px;
+}
+
+.faq_toggle:checked + .faq_question .faq_icon img {
+    transform: rotate(135deg);
+}
+
+.faq.section {
+    padding-top: 168px;
+    padding-bottom: 168px;
+}
+
+.section_title + .faq {
+    margin-top: 84px;
+}
+
+
+/* footer section */
+.footer {
+    background-color: #000000;
+    width: 100%;
+    padding: 96px 0;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_nav_list {
+    list-style: none;
+    display: flex;
+    gap: 302px;
+    align-items: center;
+    justify-content: center;
+    margin: 92px 0;
+    padding: 0;
+}
+
+.footer_social_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: row;   
+    margin-top: 92px;  
+
+}
+
+.footer_text p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 92px; 
+    color: rgba(250, 242, 231, 0.5);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
